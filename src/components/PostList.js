@@ -33,8 +33,8 @@ const PostList = () => {
       {arr.map((elem) => {
         return <Post title={elem.title} />;
       })}
-      <div>
-        {active ? <h1 id="loader">loading</h1> : ""}
+      <div id="loader">
+        {active ? <h1 >loading</h1> : ""}
         <div className="btn2">
           <PaginationButtonsList pages={pages} setPages={setPages} />
         </div>
